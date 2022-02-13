@@ -62,6 +62,7 @@ class LaravelCrud extends Controller
     // Redirect after update
     function update(Request $request){
 
+        //유효성 검사
         $request->validate([
            'name'=>'required',
            'favoriteColor'=>'required',

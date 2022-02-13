@@ -78,6 +78,8 @@ class LaravelCrud extends Controller
         return redirect('crud');
     }
 
+
+    //delete
     function delete($id){
 
         $delete = DB::table('crud_tests')

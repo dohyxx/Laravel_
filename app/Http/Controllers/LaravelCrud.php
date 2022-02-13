@@ -50,6 +50,7 @@ class LaravelCrud extends Controller
             ->where('id', $id)
             ->first();
 
+        // View 전달
         $data = [
             'Info'=>$row,
             'Title'=>'Edit'

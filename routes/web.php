@@ -20,5 +20,7 @@
 Route::get('crud', [\App\Http\Controllers\LaravelCrud::class, 'index']);
 Route::post('add', [\App\Http\Controllers\LaravelCrud::class, 'add']);
 
+Route::get('edit/{id}', [\App\Http\Controllers\LaravelCrud::class, 'edit']);
+Route::post('update', [\App\Http\Controllers\LaravelCrud::class, 'update'])->name('update');
 
-
+Route::get('delete/{id}', [\App\Http\Controllers\LaravelCrud::class, 'delete']);
